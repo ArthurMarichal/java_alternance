@@ -15,19 +15,28 @@ public class CharacterController {
 
     //Personnages
     @GetMapping(value = "/Personnages")
-    public List<Character>listePersonnage(){ return characterDao.findAll();}
+    public List<Character>listCharacter(){ return characterDao.findAll();}
 
-    //Personnage/{id}
+    //Personnages/{id}
     @GetMapping(value = "Personnages/{id}")
-    public Character voirPersonnage(@PathVariable int id){
+    public Character showCharacter(@PathVariable int id){
         return characterDao.findById(id);
-    }
 
+    }    //Personnage/{id}
+    @PutMapping(value = "Personnage/{id}")
+    public Character modifyCharacter(@PathVariable int id){
+        return characterDao.modify(id);
+    }
+    //Personnage(POST)
     @PostMapping(value = "/Personnage")
     public void addCharacter(@RequestBody Character character){
-
         characterDao.save(character);
-
     }
+    //Delete
+    @DeleteMapping(value = "/delete/{id}")
+    public void deleteCharacter(@PathVariable int id){
+        characterDao.delete(id);
+    }
+
 
 }

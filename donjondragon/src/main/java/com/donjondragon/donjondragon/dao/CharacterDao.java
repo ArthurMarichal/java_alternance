@@ -9,4 +9,5 @@ public interface CharacterDao {
     public Character findById(int id);
     public Character save(Character character);
     public Character delete(int id);
+    public  Character modify(int id);
 }

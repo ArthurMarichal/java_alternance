@@ -43,4 +43,10 @@ public class CharacterDaoImpl implements CharacterDao{
 
     @Override
     public Character delete(int id) { return null;}
+
+    @Override
+    public  Character modify(int id){
+        return null;
+    }
+
 }
