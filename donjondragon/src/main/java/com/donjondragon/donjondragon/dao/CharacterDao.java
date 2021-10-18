@@ -8,4 +8,5 @@ public interface CharacterDao {
     public List<Character> findAll();
     public Character findById(int id);
     public Character save(Character character);
+    public Character delete(int id);
 }

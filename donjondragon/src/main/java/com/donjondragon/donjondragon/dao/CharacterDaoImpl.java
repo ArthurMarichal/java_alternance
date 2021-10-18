@@ -27,8 +27,20 @@ public class CharacterDaoImpl implements CharacterDao{
     public List<Character> findAll(){ return characters; }
 
     @Override
-    public Character findById(int id) { return null;}
+    public Character findById(int id) {
+
+        for (Character character : characters) {
+            if (character.getId() == id)
+                return character;
+        }
+        return null;}
 
     @Override
-    public Character save(Character character) { return null;}
+    public Character save(Character character) {
+
+        characters.add(character);
+        return character;}
+
+    @Override
+    public Character delete(int id) { return null;}
 }
