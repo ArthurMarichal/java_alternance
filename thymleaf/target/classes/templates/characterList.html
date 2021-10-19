@@ -12,12 +12,15 @@
 <div>
     <table border="1">
         <tr>
+            <th>Id</th>
             <th>Name</th>
             <th>Type</th>
         </tr>
         <tr th:each ="character : ${characters}">
+            <td th:utext="${character.id}">...</td>
             <td th:utext="${character.name}">...</td>
             <td th:utext="${character.type}">...</td>
+            <td th:href="editCharacter">Edit</td>
         </tr>
     </table>
 </div>
