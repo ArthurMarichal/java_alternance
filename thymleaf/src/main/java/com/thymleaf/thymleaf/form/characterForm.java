@@ -1,7 +1,7 @@
 package com.thymleaf.thymleaf.form;
 
 public class characterForm {
-
+    private int chose;
     private int id;
     private String name;
     private String type;

@@ -19,7 +19,7 @@ public class characterController {
    static  {
         characters.add(new Character(1,"Jean","Mage"));
         characters.add(new Character(2,"Thor","Guerrier"));
-        characters.add(new Character(3,"Glandoulf","Mage"));
+        characters.add(new Character(3,"Glandoulfe","Mage"));
     }
     // Injectez (inject) via application.properties.
     @Value("${welcome.message}")
