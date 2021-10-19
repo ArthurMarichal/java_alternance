@@ -2,6 +2,7 @@ package com.thymleaf.thymleaf.model;
 
 public class Character {
     private int id;
+    private int chose;
     private String name;
     private String type;
 
