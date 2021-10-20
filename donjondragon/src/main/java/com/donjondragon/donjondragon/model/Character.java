@@ -1,6 +1,13 @@
 package com.donjondragon.donjondragon.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Character {
+    @Id
+    @GeneratedValue
     private int id;
     private String name;
     private String type;
@@ -9,6 +16,10 @@ public class Character {
         this.id = id;
         this.name = name;
         this.type = type;
+    }
+
+    public Character() {
+
     }
 
     public int getId() {
