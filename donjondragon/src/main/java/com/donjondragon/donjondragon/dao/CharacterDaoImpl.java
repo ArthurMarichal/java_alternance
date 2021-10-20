@@ -42,11 +42,13 @@ public class CharacterDaoImpl implements CharacterDao{
         return character;}
 
     @Override
-    public Character delete(int id) { return null;}
-
+    public void delete(int id) {
+        characters.remove(id-1);
+    }
     @Override
-    public  Character modify(int id){
-        return null;
+    public Character modify(int id, Character character){
+        characters.set(id,character);
+        return character;
     }
 
-}
+    }

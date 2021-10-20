@@ -24,8 +24,8 @@ public class CharacterController {
 
     }    //Personnage/{id}
     @PutMapping(value = "Personnage/{id}")
-    public Character modifyCharacter(@PathVariable int id){
-        return characterDao.modify(id);
+    public Character modifyCharacter(@PathVariable int id, @RequestBody Character character){
+        return characterDao.modify(id, character);
     }
     //Personnage(POST)
     @PostMapping(value = "/Personnage")
@@ -33,7 +33,7 @@ public class CharacterController {
         characterDao.save(character);
     }
     //Delete
-    @DeleteMapping(value = "/delete/{id}")
+    @DeleteMapping(value = "/Personnage/{id}")
     public void deleteCharacter(@PathVariable int id){
         characterDao.delete(id);
     }
