@@ -9,7 +9,7 @@
 
 <h1>Modification de votre personnage :</h1>
 
-<form th:action="@{/editCharacter}"
+<form th:action="@{'/editCharacter/' + ${id}}"
       th:object="${characterForm}" method="POST">
     Id :
     <input type="text" th:field="*{id}">
@@ -19,7 +19,7 @@
     Type:
     <input type="text" th:field="*{type}" />
     <br/>
-    <input type="submit" value="Create" />
+    <input type="submit" value="Edit" />
 </form>
 
 <br/>

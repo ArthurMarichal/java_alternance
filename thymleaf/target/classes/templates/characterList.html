@@ -20,7 +20,8 @@
             <td th:utext="${character.id}">...</td>
             <td th:utext="${character.name}">...</td>
             <td th:utext="${character.type}">...</td>
-            <td th:href="editCharacter">Edit</td>
+            <td><a th:href="@{editCharacter/{id}(id = ${character.id})}">Edit</a></td>
+            <td><form th:action="@{/characterList/{id}(id = ${character.id})}" th:method="post"><button type="submit">Delete</button></form></td>
         </tr>
     </table>
 </div>
