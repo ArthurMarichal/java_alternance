@@ -9,9 +9,8 @@
       <change beforePath="$PROJECT_DIR$/donjondragon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/controller/CharacterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/controller/CharacterController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/dao/CharacterDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/dao/CharacterDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/dao/CharacterDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/dao/CharacterDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/dao/CharacterDaoImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/model/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/src/main/java/com/donjondragon/donjondragon/model/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/donjondragon/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/donjondragon/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />

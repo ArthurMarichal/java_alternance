@@ -85,10 +85,10 @@ public class characterController {
 
         if (name != null && name.length() > 0 //
                 && type != null && type.length() > 0) {
-            int size = characterForm.getId()-1;
+            //int size = id-1;
             RestTemplate restTemplate = new RestTemplate();
             Character character = new Character(id, name, type);
-            restTemplate.put("http://localhost:8081/Personnage/"+size,character,Character.class);
+            restTemplate.put("http://localhost:8081/Personnage/"+id,character,Character.class);
 
             return "redirect:/characterList";
         }
